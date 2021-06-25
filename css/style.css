@@ -56,7 +56,8 @@ header {
   width: 80px;
 }
 
-.navigation {
+.navigation,
+.personal-contacts {
   display: none;
 }
 
@@ -70,7 +71,7 @@ header {
   height: 100vh;
   background: var(--bgColor);
   display: grid;
-  grid-template-rows: auto 1fr 0.5fr;
+  grid-template-rows: auto 4fr 0.3fr;
   transition: all 0.3s linear;
   transform: translate(-100%);
   z-index: 99;
@@ -89,7 +90,7 @@ header {
 }
 
 .sidebar-toggler {
-  display: inline-block;
+  display: block;
   font-size: 1.5rem;
   background: transparent;
   border-color: transparent;
@@ -127,10 +128,22 @@ header {
   padding: 0.8em 1.5em;
 }
 
+.personal-contacts-sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.personal-contacts-sidebar a {
+  color: var(--secondaryColor);
+  font-size: 0.9rem;
+  margin-bottom: 1em;
+}
+
 .social-icons {
   justify-self: center;
   display: flex;
-  margin: 4em auto 1em;
+  margin: 1.5em auto 1em;
 }
 
 .social-icons a {

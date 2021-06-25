@@ -24,12 +24,12 @@
   }
 
   .navigation li {
-    margin-left: 1em;
+    margin-left: 2.5em;
   }
 
   .navigation a,
   .footer-nav a {
-    color: rgba(4, 194, 201, 0.8);
+    color: rgba(4, 194, 201, 1);
     transition: all 0.3s ease-in-out;
     text-transform: uppercase;
     font-size: 0.85rem;
@@ -48,6 +48,25 @@
 
   .nav-link:hover.nav-link:after {
     opacity: 1;
+  }
+
+  .personal-contacts {
+    display: block;
+  }
+
+  .personal-contacts a {
+    color: rgba(4, 194, 201, 0.8);
+    font-size: 0.85rem;
+    margin-left: 1em;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .personal-contacts a:hover {
+    color: rgba(4, 194, 201, 1);
+  }
+
+  .personal-contacts-sidebar {
+    display: none;
   }
 
   .sidebar,
