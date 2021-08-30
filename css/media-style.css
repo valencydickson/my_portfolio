@@ -137,7 +137,7 @@
 
   .about-content p {
     width: 85%;
-    text-align: left;
+    text-align: justify !important;
   }
 
   .about-content a {

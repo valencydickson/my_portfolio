@@ -187,6 +187,8 @@ header {
 .intro p {
   margin-bottom: 2em;
   font-size: 0.95rem;
+  letter-spacing: 2px;
+  line-height: 2;
 }
 
 .intro a {
@@ -249,6 +251,12 @@ header {
 .about-content img {
   border-radius: 7px;
   margin-bottom: 3em;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.about-content img:hover {
+  opacity: 1;
 }
 
 .about-content h4 {
@@ -326,23 +334,23 @@ header {
 }
 
 .line1:after {
-  max-width: 85%;
+  max-width: 90%;
 }
 
 .line2:after {
-  max-width: 80%;
+  max-width: 85%;
 }
 
 .line3:after {
-  max-width: 75%;
+  max-width: 80%;
 }
 
 .line4:after {
-  max-width: 65%;
+  max-width: 70%;
 }
 
 .line5:after {
-  max-width: 60%;
+  max-width: 70%;
 }
 
 .line6:after {
@@ -350,7 +358,7 @@ header {
 }
 
 .line7:after {
-  max-width: 75%;
+  max-width: 80%;
 }
 
 .line8:after {
@@ -359,6 +367,10 @@ header {
 
 .line9:after {
   max-width: 50%;
+}
+
+.line10:after {
+  max-width: 60%;
 }
 
 @keyframes animate {

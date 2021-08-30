@@ -125,4 +125,11 @@ $(window).ready(function () {
       $(".mail-message").html("Your message was sent successfully. Thanks!")
     );
   }
+
+  //Copyright Year
+  let year = new Date();
+
+  let y = year.getFullYear();
+
+  $(".year").html("@ " + y);
 });
