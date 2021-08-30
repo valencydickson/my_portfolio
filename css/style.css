@@ -5,6 +5,7 @@
   --secondaryColor: #04c2c9;
   --secondaryColorHex: rgba(4, 194, 201, 0.2);
   --bgColor: black;
+  --transition: all 0.3s ease-in-out;
 }
 
 * {
@@ -48,7 +49,7 @@ header {
   top: 0;
   right: 0;
   left: 0;
-  transition: all 0.5s ease-in-out;
+  transition: var(--transition);
   z-index: 1;
 }
 
@@ -191,7 +192,7 @@ header {
   line-height: 2;
 }
 
-.intro a {
+.cta {
   text-transform: uppercase;
   padding: 1em 1.5em;
   font-size: 0.8rem;
@@ -200,21 +201,21 @@ header {
   background-color: var(--primaryColor);
   border: 1px solid var(--primaryColor);
   border-radius: 3px;
-  transition: all 0.3s ease-in-out;
+  transition: var(--transition);
 }
 
-.intro a:hover {
+.cta:hover {
   transform: scale(0.5);
   color: rgb(194, 189, 189);
 }
 
-.intro a:active,
-.intro a:focus {
+.cta:active,
+.cta:focus {
   outline: 0.1px solid var(--primaryColor);
   box-shadow: none;
 }
 
-.intro a:active {
+.cta:active {
   transform: scale(0.8);
   border-radius: 0.6rem;
 }
@@ -252,7 +253,7 @@ header {
   border-radius: 7px;
   margin-bottom: 3em;
   opacity: 0.5;
-  transition: opacity 0.3s ease-in-out;
+  transition: var(--transition);
 }
 
 .about-content img:hover {
@@ -276,7 +277,7 @@ header {
   color: var(--secondaryColor);
   font-weight: 600;
   font-size: 0.9rem;
-  transition: all 0.3s ease-in-out;
+  transition: var(--transition);
 }
 
 .about-content a:hover {
@@ -436,6 +437,7 @@ header {
   display: flex;
   flex-direction: column;
   position: absolute;
+  width: 80%;
   top: 50%;
   left: 50%;
   color: black;
@@ -451,22 +453,28 @@ header {
 }
 
 .project-description h4 {
-  font-size: 1.3rem !important;
+  font-size: 1.1rem !important;
   font-weight: 600;
-  margin-bottom: 0.5em;
+  margin: 0.5em 0 1em;
 }
 
 .project-description p {
   margin-bottom: 2em;
-  color: var(--primaryColor);
   font-size: 0.9rem;
+}
+
+.project-tools {
+  opacity: 0.8;
+  font-size: 0.8rem;
+  font-weight: 600;
 }
 
 .project-description a {
   border: 1px solid var(--secondaryColor);
-  margin-bottom: 1.5em;
+  margin: 0 auto 1.5em;
   color: black;
   padding: 0.5em;
+  width: 50%;
 }
 
 .project-description a:last-child {
@@ -483,17 +491,11 @@ header {
 
 .contacts-content h4 {
   font-size: 1.2rem;
-  margin-bottom: 1em;
+  margin-bottom: 2.5em;
+  text-align: center;
 }
 
-.contacts-content p {
-  text-align: left;
-  font-size: 0.8rem;
-  font-weight: 600;
-  margin-bottom: 1em;
-}
-
-.contacts-form {
+/* .contacts-form {
   display: flex;
   flex-direction: column;
 }
@@ -520,7 +522,7 @@ header {
   text-align: left;
   margin-bottom: 1em;
   color: var(--secondaryColor);
-}
+} */
 
 /* FOOTER */
 
@@ -549,6 +551,11 @@ footer {
   color: var(--secondaryColor);
   margin: 0.5em;
   font-size: 1.3rem;
+  transition: var(--transition);
+}
+
+.social-links a:hover {
+  color: var(--primaryColor);
 }
 
 .copyright {

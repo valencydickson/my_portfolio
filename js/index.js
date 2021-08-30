@@ -99,32 +99,32 @@ $(window).ready(function () {
     }
   }
 
-  //To submit Email
+  // //To submit Email
 
-  $(".contacts-form").submit(submitForm);
+  // $(".contacts-form").submit(submitForm);
 
-  function submitForm(e) {
-    e.preventDefault();
-    let name = $(".name").val();
-    let email = $(".email").val();
-    let message = $(".message").val();
+  // function submitForm(e) {
+  //   e.preventDefault();
+  //   let name = $(".name").val();
+  //   let email = $(".email").val();
+  //   let message = $(".message").val();
 
-    sendEmail(name, email, message);
-  }
+  //   sendEmail(name, email, message);
+  // }
 
-  function sendEmail(name, email, message) {
-    Email.send({
-      Host: "smtp.gmail.com",
-      Username: "dickson.valency@gmail.com",
-      Password: "eztinmnustwadump",
-      To: "dickson.valency@gmail.com",
-      From: "dickson.valency@gmail.com",
-      Subject: `${name} from your website has send you a message`,
-      Body: `Name: ${name} <br/> Email: ${email} <br/> Message: ${message}`,
-    }).then((message) =>
-      $(".mail-message").html("Your message was sent successfully. Thanks!")
-    );
-  }
+  // function sendEmail(name, email, message) {
+  //   Email.send({
+  //     Host: "smtp.gmail.com",
+  //     Username: "dickson.valency@gmail.com",
+  //     Password: "eztinmnustwadump",
+  //     To: "dickson.valency@gmail.com",
+  //     From: "dickson.valency@gmail.com",
+  //     Subject: `${name} from your website has send you a message`,
+  //     Body: `Name: ${name} <br/> Email: ${email} <br/> Message: ${message}`,
+  //   }).then((message) =>
+  //     $(".mail-message").html("Your message was sent successfully. Thanks!")
+  //   );
+  // }
 
   //Copyright Year
   let year = new Date();

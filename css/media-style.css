@@ -5,6 +5,7 @@
   --secondaryColor: #04c2c9;
   --secondaryColorHex: rgba(4, 194, 201, 0.2);
   --bgColor: black;
+  --transition: all 0.3s ease-in-out;
 }
 
 @media screen and (min-width: 768px) {
@@ -30,7 +31,7 @@
   .navigation a,
   .footer-nav a {
     color: rgba(4, 194, 201, 1);
-    transition: all 0.3s ease-in-out;
+    transition: var(-);
     text-transform: uppercase;
     font-size: 0.85rem;
   }
@@ -43,7 +44,7 @@
     padding-top: 0.4rem;
     border-bottom: 2px solid var(--primaryColor);
     opacity: 0;
-    transition: all 0.3s ease-in-out;
+    transition: var(--transition);
   }
 
   .nav-link:hover.nav-link:after {
@@ -58,7 +59,7 @@
     color: rgba(4, 194, 201, 0.8);
     font-size: 0.85rem;
     margin-left: 1em;
-    transition: all 0.2s ease-in-out;
+    transition: var(--transition);
   }
 
   .personal-contacts a:hover {
@@ -181,14 +182,6 @@
   .contacts-content {
     max-width: 600px;
     margin: auto;
-  }
-
-  .contacts-content h4 {
-    text-align: left;
-  }
-
-  .mail-message {
-    font-size: 0.9rem;
   }
 
   /* FOOTER */
