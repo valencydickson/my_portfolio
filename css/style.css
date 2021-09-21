@@ -374,6 +374,10 @@ header {
   max-width: 60%;
 }
 
+.line11:after {
+  max-width: 60%;
+}
+
 @keyframes animate {
   0% {
     width: 0;
