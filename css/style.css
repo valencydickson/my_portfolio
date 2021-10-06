@@ -417,7 +417,7 @@ header {
 
 .project-card {
   margin: 0 0 3em;
-  height: 50vh;
+  height: 60vh;
   position: relative;
   text-align: center;
   transition: all 0.5s 0.3s ease-in-out;
@@ -428,7 +428,7 @@ header {
 }
 
 .project-card img {
-  height: 50vh;
+  height: 60vh;
   object-fit: cover;
   transition: all 0.5s 0.3s ease-in-out;
 }
