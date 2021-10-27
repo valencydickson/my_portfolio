@@ -15,7 +15,7 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Roboto Mono', monospace;
   background: var(--bgColor);
   color: white;
 }
@@ -287,105 +287,26 @@ header {
 /* Skills Section */
 
 .skills-bar {
-  text-align: left;
+  text-align: center;
   margin: 0 auto;
   width: 90%;
 }
 
-.line {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: black;
-  font-weight: 600;
-  margin: 0 auto 1em;
-  padding: 0.2em 0.3em 0.6em;
-  position: relative;
+.skills-bar div {
+  margin-bottom: 2em;
 }
 
-.line:before {
-  content: "";
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 1.6em;
-  z-index: -2;
-  background: white;
-  border-radius: 5px;
+.skills-bar h4 {
+  color: var(--secondaryColor);
+  margin-bottom: 1em;
 }
 
-.line:after {
-  content: "";
-  background: var(--secondaryColor);
-  height: 1.6em;
-  transition: 0.8;
-  display: block;
-  width: 0%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  border-radius: 5px 0px 0px 5px;
+
+.skills-bar ul li {
+  margin-bottom: 0.5em;
 }
 
-.line.animate::after {
-  animation: animate 3s;
-  width: 100%;
-}
 
-.line1:after {
-  max-width: 90%;
-}
-
-.line2:after {
-  max-width: 85%;
-}
-
-.line3:after {
-  max-width: 80%;
-}
-
-.line4:after {
-  max-width: 70%;
-}
-
-.line5:after {
-  max-width: 70%;
-}
-
-.line6:after {
-  max-width: 60%;
-}
-
-.line7:after {
-  max-width: 80%;
-}
-
-.line8:after {
-  max-width: 65%;
-}
-
-.line9:after {
-  max-width: 50%;
-}
-
-.line10:after {
-  max-width: 60%;
-}
-
-.line11:after {
-  max-width: 60%;
-}
-
-@keyframes animate {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
-}
 
 /* Services Section */
 
@@ -441,7 +362,7 @@ header {
   display: flex;
   flex-direction: column;
   position: absolute;
-  width: 80%;
+  width: 90%;
   top: 50%;
   left: 50%;
   color: black;
@@ -457,13 +378,13 @@ header {
 }
 
 .project-description h4 {
-  font-size: 1.1rem !important;
+  font-size: 1rem !important;
   font-weight: 600;
   margin: 0.5em 0 1em;
 }
 
 .project-description p {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.2em;
   font-size: 0.9rem;
   line-height: 2;
 }
@@ -476,7 +397,8 @@ header {
 
 .project-description a {
   border: 1px solid var(--secondaryColor);
-  margin: 0 auto 1.5em;
+  margin: 0 auto 1em;
+  font-size: 0.8rem;
   color: black;
   padding: 0.5em;
   max-width: 60%;
@@ -500,34 +422,7 @@ header {
   text-align: center;
 }
 
-/* .contacts-form {
-  display: flex;
-  flex-direction: column;
-}
 
-.contacts-content input,
-.contacts-content textarea {
-  font-size: 1.1rem;
-  margin-bottom: 1em;
-  padding: 0.5em;
-}
-
-.btn-submit {
-  max-width: 110px;
-  background-color: var(--primaryColor);
-  border: 1px solid var(--primaryColor);
-  border-radius: 5px;
-  color: white;
-  padding: 0.3em 0.4em;
-  font-size: 1.2rem;
-}
-
-.mail-message {
-  font-size: 0.8rem;
-  text-align: left;
-  margin-bottom: 1em;
-  color: var(--secondaryColor);
-} */
 
 /* FOOTER */
 

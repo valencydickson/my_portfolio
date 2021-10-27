@@ -154,6 +154,16 @@
     width: 60%;
   }
 
+  .skills-bar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .skills-bar div {
+    margin-bottom: 0;
+  }
+  
+
   /* Services */
 
   .services-content {

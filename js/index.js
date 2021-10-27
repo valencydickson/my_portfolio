@@ -32,29 +32,7 @@ $(window).ready(function () {
 
   //AnimateJs
 
-  // Wrap every letter in a span
-  var textWrapper = document.querySelector(".ml3");
-  textWrapper.innerHTML = textWrapper.textContent.replace(
-    /\S/g,
-    "<span class='letter'>$&</span>"
-  );
 
-  anime
-    .timeline({ loop: true })
-    .add({
-      targets: ".ml3 .letter",
-      opacity: [0, 1],
-      easing: "easeInOutQuad",
-      duration: 1,
-      delay: (el, i) => 150 * (i + 1),
-    })
-    .add({
-      targets: ".ml3",
-      opacity: 0,
-      duration: 1,
-      easing: "easeOutExpo",
-      delay: 1000,
-    });
 
   //TRIGGERING ANIMATION WHEN SCROLLING
 
@@ -99,32 +77,7 @@ $(window).ready(function () {
     }
   }
 
-  // //To submit Email
 
-  // $(".contacts-form").submit(submitForm);
-
-  // function submitForm(e) {
-  //   e.preventDefault();
-  //   let name = $(".name").val();
-  //   let email = $(".email").val();
-  //   let message = $(".message").val();
-
-  //   sendEmail(name, email, message);
-  // }
-
-  // function sendEmail(name, email, message) {
-  //   Email.send({
-  //     Host: "smtp.gmail.com",
-  //     Username: "dickson.valency@gmail.com",
-  //     Password: "eztinmnustwadump",
-  //     To: "dickson.valency@gmail.com",
-  //     From: "dickson.valency@gmail.com",
-  //     Subject: `${name} from your website has send you a message`,
-  //     Body: `Name: ${name} <br/> Email: ${email} <br/> Message: ${message}`,
-  //   }).then((message) =>
-  //     $(".mail-message").html("Your message was sent successfully. Thanks!")
-  //   );
-  // }
 
   //Copyright Year
   let year = new Date();
