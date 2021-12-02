@@ -15,7 +15,7 @@
 }
 
 body {
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Montserrat', sans-serif;
   background: var(--bgColor);
   color: white;
 }
@@ -249,26 +249,33 @@ header {
 
 /* About Section */
 
+#about {
+  margin-top: 5em;
+}
+
 .about-content img {
-  border-radius: 7px;
-  margin-bottom: 3em;
-  opacity: 0.5;
+  border-radius: 5px;
+  width: 250px;
+  height: 270px;
+  object-fit: cover;
+  margin: 0 auto 3em;
+  opacity: 1;
   transition: var(--transition);
 }
 
 .about-content img:hover {
-  opacity: 1;
+  opacity: 0.7;
 }
 
 .about-content h4 {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   margin-bottom: 0.8em;
 }
 
 .about-content p {
-  width: 85%;
-  margin: 0 auto 1em;
   font-size: 0.9rem;
+  width: 80%;
+  margin: auto;
   line-height: 1.7;
   letter-spacing: 0.1rem;
 }
@@ -286,26 +293,22 @@ header {
 
 /* Skills Section */
 
-.skills-bar {
-  text-align: center;
-  margin: 0 auto;
-  width: 90%;
+.skills-content {
+  margin-top: 1.5em;
 }
 
-.skills-bar div {
-  margin-bottom: 2em;
+.skills-content h4 {
+  color: var(--primaryColor);
 }
 
-.skills-bar h4 {
-  color: var(--secondaryColor);
-  margin-bottom: 1em;
+.skills-content li {
+  margin-bottom: 0.8em;
+  font-size: 0.95rem;
 }
 
-
-.skills-bar ul li {
-  margin-bottom: 0.5em;
+.skills-table {
+  display: none;
 }
-
 
 
 /* Services Section */
