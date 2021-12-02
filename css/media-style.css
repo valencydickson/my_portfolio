@@ -1,0 +1,262 @@
+:root {
+  --boxShadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  --primaryColor: #e31b6d;
+  --primaryColorHex: rgba(227, 27, 109, 1);
+  --secondaryColor: #04c2c9;
+  --secondaryColorHex: rgba(4, 194, 201, 0.2);
+  --bgColor: black;
+  --transition: all 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 768px) {
+  /* HEADER */
+
+  .navbar {
+    padding: 2em;
+  }
+
+  .navigation {
+    display: flex;
+  }
+
+  .navigation ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navigation li {
+    margin-left: 2.5em;
+  }
+
+  .navigation a,
+  .footer-nav a {
+    color: rgba(4, 194, 201, 1);
+    transition: var(-);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+  }
+
+  .nav-link:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    padding-top: 0.4rem;
+    border-bottom: 2px solid var(--primaryColor);
+    opacity: 0;
+    transition: var(--transition);
+  }
+
+  .nav-link:hover.nav-link:after {
+    opacity: 1;
+  }
+
+  .personal-contacts {
+    display: block;
+  }
+
+  .personal-contacts a {
+    color: rgba(4, 194, 201, 0.8);
+    font-size: 0.85rem;
+    margin-left: 1em;
+    transition: var(--transition);
+  }
+
+  .personal-contacts a:hover {
+    color: rgba(4, 194, 201, 1);
+  }
+
+  .personal-contacts-sidebar {
+    display: none;
+  }
+
+  .sidebar,
+  .sidebar-toggler {
+    display: none;
+  }
+
+  /* Introduction */
+  .landing {
+    padding: 13em 0 2em !important;
+    margin: auto;
+    max-width: 1024px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .intro {
+    width: 60%;
+    margin: 0;
+    padding: 0 !important;
+  }
+
+  .intro h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1.3em;
+  }
+
+  .intro h1 {
+    font-size: 4rem;
+  }
+
+  .intro p {
+    width: 90%;
+  }
+
+  .landing-img {
+    display: block;
+    width: 40%;
+    opacity: 0.15;
+  }
+
+  /* MAIN */
+
+  .section-header hr {
+    max-width: 60px;
+    margin: 0 auto 3.5em;
+    border: 2px solid var(--primaryColor);
+  }
+
+  /* About */
+
+  #about {
+    margin-top: 5em;
+  }
+  .about-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .about-content img {
+    width: 400px;
+    height: 400px;
+    margin: 0 0 3em;
+  }
+
+  .about-content p {
+    font-size: 0.9rem;
+    margin: auto;
+    line-height: 1.7;
+    letter-spacing: 0.1rem;
+  }
+
+  .about-profile {
+    width: 50%;
+  }
+
+
+
+  /* Skills */
+
+
+  table.skills-table {
+    display: table;
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+
+
+  .skills-list {
+    display: none;
+  }
+
+  tr,th {
+    border: 1px solid #dddddd;
+    padding: 0.5em;
+  }
+
+
+
+  /* Services */
+
+  .services-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .services-card {
+    width: 30%;
+  }
+
+  /* Projects */
+
+  .projects-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .project-card {
+    width: 49%;
+  }
+
+  /* Contacts  */
+  .contacts-content {
+    max-width: 600px;
+    margin: auto;
+  }
+
+  /* FOOTER */
+
+  footer {
+    padding: 2em 2em 1em;
+  }
+
+  .footer-navbar,
+  .footer-social,
+  .footer-nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-navbar,
+  .footer-social {
+    margin-bottom: -1.2em;
+  }
+
+  .footer-nav li {
+    margin-left: 1em;
+  }
+
+  .footer-nav a {
+    font-size: 0.8rem !important;
+  }
+
+  .social-links a {
+    color: var(--secondaryColor);
+    margin: 0 0.5em 0 0;
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 890px) {
+  .intro p {
+    width: 80%;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  /* HEADER */
+  .navbar {
+    padding: 2em 4em;
+  }
+
+  .intro h1 {
+    font-size: 4.5rem;
+  }
+
+  .intro p {
+    width: 70%;
+  }
+
+
+
+
+  footer {
+    padding: 2em 4em 1em;
+  }
+}

@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Valency Dickson" />
+  <meta name="description" content="Web Developer" />
+  <title>Valency Dickson</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/VD_favicon.ico" type="image/x-icon" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4RNQ6DK61G"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-4RNQ6DK61G");
+  </script>
+
+  <meta name="google-site-verification" content="SMFGt-_4YTMwhJySlSt458NBpZhZPG6j_fWSzCzSRP4" />
+
+  <!-- AOS JS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Playfair+Display&display=swap"
+    rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/51416ae4aa.js" crossorigin="anonymous"></script>
+
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/media-style.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header id="header">
+    <div class="navbar">
+      <a href="/" class="logo">
+        <img src="images/logo.svg" alt="logo" />
+      </a>
+
+      <nav class="navigation">
+        <ul>
+          <li>
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Contacts -->
+      <div class="personal-contacts">
+        <a href="mailto:dickson.valency@gmail.com">dickson.valency@gmail.com</a>
+      </div>
+
+      <!-- Navigation -->
+      <button class="sidebar-toggler">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <div class="sidebar">
+        <div class="sidebar-header">
+          <a href="index.html" class="logo">
+            <img src="images/logo.svg" alt="logo" />
+          </a>
+          <button class="close-btn"><i class="fas fa-times"></i></button>
+        </div>
+
+        <nav id="toggle-nav" class="toggle-nav">
+          <ul>
+            <li>
+              <a class="nav-link" href="#intro">Home</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- social media -->
+        <div class="personal-contacts-sidebar">
+          <a href="mailto:dickson.valency@gmail.com">dickson.valency@gmail.com</a>
+        </div>
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.linkedin.com/in/valency-dickson-0a7754125/" target="_blank"><i
+                class="fab fa-linkedin-in"></i></a>
+          </li>
+          <li>
+            <a href="https://github.com/valencydickson" target="_blank"><i class="fab fa-github"></i></a>
+          </li>
+          <li>
+            <a href="mailto:dickson.valency@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Introduction -->
+
+    <div class="landing">
+      <div id="intro" class="intro">
+        <h3>Hello! I'm</h3>
+        <h1>
+          <span class="v"><span>V</span>alency </span>
+
+          <br />
+          <span class="d"><span>D</span>ickson</span>
+        </h1>
+        <p class="ml3">
+          I build websites and web apps using modern web technologies.
+        </p>
+        <a href="#contacts" role="button" class="btn cta">Get in Touch</a>
+      </div>
+      <div class="landing-img">
+        <img src="images/bgpic-min.png" alt="bgpic" />
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <!-- About Section -->
+    <section id="about" class="container">
+      <div class="section-header" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+        <h2>About Me</h2>
+        <hr />
+      </div>
+
+      <div class="about-content" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+        <div>
+          <img src="images/profile-pic-min.png" alt="profile-pic" />
+        </div>
+        <div class="about-profile">
+          <div class="about-texts">
+            <h4>Who's this guy?</h4>
+            <p>
+              I’m a web developer based in Dar es Salaam, Tanzania. I have
+              serious passion for website and web app design and development.
+            </p>
+
+            <p style="margin-bottom: 0.5em;">You can ready my resume in the PDF attached below.</p>
+            <a href="cv/Valency Dickson resume.pdf" download="">My Resume (pdf 230kb)</a>
+          </div>
+          <div class="skills-content">
+            <h4>My Skills</h4>
+            <ul class="skills-list">
+              <li>HTML</li>
+              <li>CSS</li>
+
+              <li>JavaScript</li>
+
+              <li>ReactJs</li>
+              <li>PHP</li>
+              <li>Laravel</li>
+              <li>SQL</li>
+              <li>Wordpress</li>
+              <li>Wix</li>
+            </ul>
+            <table class="skills-table">
+              <tr>
+                <th>HTML</th>
+                <th>CSS</th>
+                <th>JavaScript</th>
+              </tr>
+              <tr>
+                <th>ReactJs</th>
+                <th>PHP</th>
+                <th>Laravel</th>
+              </tr>
+              <tr>
+                <th>SQL</th>
+                <th>WordPress</th>
+                <th>Wix</th>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- What I Do Section -->
+    <section class="services container">
+      <div class="section-header" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+        <h2>What I Do</h2>
+        <hr />
+      </div>
+
+      <div class="services-content" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+        <div class="services-card">
+          <i class="fas fa-pencil-ruler"></i>
+          <h4>Design</h4>
+          <p>I do simple and clean design patterns and interactions...</p>
+        </div>
+
+        <div class="services-card">
+          <i class="fas fa-code"></i>
+          <h4>Development</h4>
+          <p>
+            I create responsive website, web App, landing pages etc. from
+            scratch
+          </p>
+        </div>
+
+        <div class="services-card">
+          <i class="fab fa-wordpress"></i>
+          <h4>WordPress</h4>
+          <p>
+            I do designing & developing WordPress websites with both
+            ready-made themes and custom themes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container">
+      <div class="section-header" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+        <h2>Latest Projects</h2>
+        <hr />
+      </div>
+
+      <div class="projects-content" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+        <div class="project-card">
+          <img src="images/register.png" alt="LWAES" />
+          <div class="project-description">
+            <h4>Login System</h4>
+            <p>
+              Users should be able to register in the system, login to the
+              system using their username/email and password and Access
+              profile page only after login.
+            </p>
+            <p class="project-tools">Bootstrap | PHP | MySQL</p>
+
+            <a href="https://github.com/valencydickson/login-system" role="button" class="btn project-btn code-btn"
+              target="_blank"><span>
+                <i class="fab fa-github"></i>
+              </span>
+              Source code</a>
+            <a href="https://login-system-php-valency.herokuapp.com/" role="button" class="btn project-btn site-btn"
+              target="_blank"><span>
+                <i class="fas fa-eye"></i>
+              </span>
+              Visit site</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="images/todo-php.png" alt="LWAES" />
+          <div class="project-description">
+            <h4>Todo-App-php</h4>
+            <p>
+              A web app for adding to-do in a list. User can mark to-do as
+              completed, delete to-do in a list, Clear all completed todos.
+            </p>
+            <p class="project-tools">JavaScript | Bootstrap | PHP | MySQL</p>
+
+            <a href="https://github.com/valencydickson/Todo-App-php" role="button" class="btn project-btn code-btn"
+              target="_blank"><span>
+                <i class="fab fa-github"></i>
+              </span>
+              Source code</a>
+            <a href="https://todo-valency.herokuapp.com/" role="button" class="btn project-btn site-btn"
+              target="_blank"><span>
+                <i class="fas fa-eye"></i>
+              </span>
+              Visit site</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="images/LWAES.png" alt="LWAES" />
+          <div class="project-description">
+            <h4>Legit Writing and Editorial Services</h4>
+            <p>
+              LWAES is a fully fledged research, professional writing and
+              editorial service firm based in Tanzania.
+            </p>
+            <p class="project-tools">Wordpress</p>
+            <a href="https://legitwriterstz.com/" role="button" class="btn project-btn site-btn" target="_blank"><span>
+                <i class="fas fa-eye"></i>
+              </span>
+              Visit site</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="images/Farus.png" alt="African Repatriation" />
+          <div class="project-description">
+            <h4>African Repatriation website</h4>
+            <p>
+              A foundation website that seeks to advance and facilitate mutual
+              agenda of holistic freedom and prosperity for entire African
+              family.
+            </p>
+            <p class="project-tools">Wordpress</p>
+            <a href="https://africanrepatriation.org/" role="button" class="btn project-btn site-btn"
+              target="_blank"><span>
+                <i class="fas fa-eye"></i>
+              </span>
+              Visit site</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="images/calculator_PS.png" alt="landing-page" />
+          <div class="project-description">
+            <h4>Calculator App</h4>
+            <p>
+              A web app for making simple calculations. User can perform
+              mathematical operations like addition, subtraction,
+              multiplication, and division.
+            </p>
+            <p class="project-tools">JavaScript</p>
+            <a href="https://github.com/valencydickson/calculator-app" role="button" class="btn project-btn code-btn"
+              target="_blank"><span>
+                <i class="fab fa-github"></i>
+              </span>
+              Source code</a>
+            <a href="https://calculator-app-jet-zeta.vercel.app/" role="button" class="btn project-btn site-btn"
+              target="_blank"><span>
+                <i class="fas fa-eye"></i>
+              </span>
+              Visit site</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="images/rest-country-api.png" alt="landing-page" />
+          <div class="project-description">
+            <h4>REST Countries API</h4>
+            <p>
+              A web app that uses REST Countries API to pull country data.
+              User can See all countries from the API on the homepage, Search
+              for a country using an input field, Filter countries by region.
+            </p>
+            <p class="project-tools">ReactJs | Redux | Bootstrap</p>
+
+            <a href="https://github.com/valencydickson/rest-countries-api" role="button"
+              class="btn project-btn code-btn" target="_blank"><span>
+                <i class="fab fa-github"></i>
+              </span>
+              Source code</a>
+            <a href="https://rest-countries-api-gray-nine.vercel.app/" role="button" class="btn project-btn site-btn"
+              target="_blank"><span>
+                <i class="fas fa-eye"></i>
+              </span>
+              Visit site</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacts Section -->
+
+    <section id="contacts" class="container">
+      <div class="section-header" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+        <h2>Contacts</h2>
+        <hr />
+      </div>
+      <div class="contacts-content" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+        <h4>Do you have a question or want to work together?</h4>
+
+        <a href="mailto:dickson.valency@gmail.com" target="_blank" role="button" class="btn cta">Get in Touch</a>
+        <!-- <form action="" class="contacts-form">
+            <input type="text" placeholder="Name*" class="name" required />
+            <input type="email" placeholder="Email*" class="email" required />
+            <textarea
+              cols="30"
+              rows="10"
+              placeholder="Message*"
+              class="message"
+              required
+            ></textarea>
+            <div class="mail-message"></div>
+            <button type="submit" class="btn-submit btn">Submit</button>
+          </form> -->
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-navbar">
+      <a href="index.html" class="footer-logo">
+        <img src="images/logo.svg" alt="logo" />
+      </a>
+      <nav class="footer-nav">
+        <ul>
+          <li>
+            <a class="nav-link" href="#intro">Home</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer-social">
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/valency-dickson-0a7754125/" target="_blank"><i
+            class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/valencydickson" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:dickson.valency@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+      </div>
+
+      <div class="copyright">
+        <p class="ml-auto">VALENCY DICKSON <span class="year">©2020</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Smtp library script -->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Main Js -->
+  <script src="js/index.js"></script>
+</body>
+
+</html>
