@@ -306,8 +306,26 @@ header {
   font-size: 0.95rem;
 }
 
-.skills-table {
-  display: none;
+
+
+
+table.skills-table {
+  display: table;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+
+
+tr,th {
+  border: 1px solid #dddddd;
+  padding: 0.5em;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+th:hover {
+  background-color: rgba(4, 194, 201, 0.7);
 }
 
 
