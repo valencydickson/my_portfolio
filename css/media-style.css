@@ -187,8 +187,12 @@
   }
 
   .project-card {
-    width: 49%;
+    margin: 0 0 3em;
+    width: 45%;
   }
+  
+
+  
 
   /* Contacts  */
   .contacts-content {

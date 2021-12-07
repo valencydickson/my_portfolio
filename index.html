@@ -67,6 +67,9 @@
             <a class="nav-link" href="#projects">Projects</a>
           </li>
           <li>
+            <a class="nav-link" href="#testimonials">Testimonials</a>
+          </li>
+          <li>
             <a class="nav-link" href="#contacts">Contacts</a>
           </li>
         </ul>
@@ -102,6 +105,9 @@
               <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li>
+              <a class="nav-link" href="#testimonials">Testimonials</a>
+            </li>
+            <li>
               <a class="nav-link" href="#contacts">Contacts</a>
             </li>
           </ul>
@@ -110,19 +116,20 @@
         <!-- social media -->
         <div class="personal-contacts-sidebar">
           <a href="mailto:dickson.valency@gmail.com">dickson.valency@gmail.com</a>
+          <ul class="social-icons">
+            <li>
+              <a href="https://www.linkedin.com/in/valency-dickson-0a7754125/" target="_blank"><i
+                  class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href="https://github.com/valencydickson" target="_blank"><i class="fab fa-github"></i></a>
+            </li>
+            <li>
+              <a href="mailto:dickson.valency@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+            </li>
+          </ul>
         </div>
-        <ul class="social-icons">
-          <li>
-            <a href="https://www.linkedin.com/in/valency-dickson-0a7754125/" target="_blank"><i
-                class="fab fa-linkedin-in"></i></a>
-          </li>
-          <li>
-            <a href="https://github.com/valencydickson" target="_blank"><i class="fab fa-github"></i></a>
-          </li>
-          <li>
-            <a href="mailto:dickson.valency@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
-          </li>
-        </ul>
+
       </div>
     </div>
 
@@ -245,15 +252,31 @@
       </div>
 
       <div class="projects-content" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+
+        <div class="project-card">
+          <img src="images/laravel.PNG" alt="Laravel CRUD" />
+          <div class="project-description">
+            <h4>Product CRUD App</h4>
+            <p class="project-tools">Bootstrap | Laravel | MySQL</p>
+
+            <a href="https://github.com/valencydickson/crud-app-laravel" role="button" class="btn project-btn code-btn"
+              target="_blank"><span>
+                <i class="fab fa-github"></i>
+              </span>
+              Source code</a>
+            <a href="https://valency-crud-app.herokuapp.com/" role="button" class="btn project-btn site-btn"
+              target="_blank"><span>
+                <i class="fas fa-eye"></i>
+              </span>
+              Visit site</a>
+          </div>
+        </div>
+
+
         <div class="project-card">
           <img src="images/register.png" alt="LWAES" />
           <div class="project-description">
             <h4>Login System</h4>
-            <p>
-              Users should be able to register in the system, login to the
-              system using their username/email and password and Access
-              profile page only after login.
-            </p>
             <p class="project-tools">Bootstrap | PHP | MySQL</p>
 
             <a href="https://github.com/valencydickson/login-system" role="button" class="btn project-btn code-btn"
@@ -270,13 +293,21 @@
         </div>
 
         <div class="project-card">
+          <img src="images/LWAES.png" alt="LWAES" />
+          <div class="project-description">
+            <h4>LWAES Website</h4>
+            <p class="project-tools">Wordpress</p>
+            <a href="https://legitwriterstz.com/" role="button" class="btn project-btn site-btn" target="_blank"><span>
+                <i class="fas fa-eye"></i>
+              </span>
+              Visit site</a>
+          </div>
+        </div>
+
+        <div class="project-card">
           <img src="images/todo-php.png" alt="LWAES" />
           <div class="project-description">
-            <h4>Todo-App-php</h4>
-            <p>
-              A web app for adding to-do in a list. User can mark to-do as
-              completed, delete to-do in a list, Clear all completed todos.
-            </p>
+            <h4>Todo-App</h4>
             <p class="project-tools">JavaScript | Bootstrap | PHP | MySQL</p>
 
             <a href="https://github.com/valencydickson/Todo-App-php" role="button" class="btn project-btn code-btn"
@@ -292,31 +323,12 @@
           </div>
         </div>
 
-        <div class="project-card">
-          <img src="images/LWAES.png" alt="LWAES" />
-          <div class="project-description">
-            <h4>Legit Writing and Editorial Services</h4>
-            <p>
-              LWAES is a fully fledged research, professional writing and
-              editorial service firm based in Tanzania.
-            </p>
-            <p class="project-tools">Wordpress</p>
-            <a href="https://legitwriterstz.com/" role="button" class="btn project-btn site-btn" target="_blank"><span>
-                <i class="fas fa-eye"></i>
-              </span>
-              Visit site</a>
-          </div>
-        </div>
+
 
         <div class="project-card">
           <img src="images/Farus.png" alt="African Repatriation" />
           <div class="project-description">
             <h4>African Repatriation website</h4>
-            <p>
-              A foundation website that seeks to advance and facilitate mutual
-              agenda of holistic freedom and prosperity for entire African
-              family.
-            </p>
             <p class="project-tools">Wordpress</p>
             <a href="https://africanrepatriation.org/" role="button" class="btn project-btn site-btn"
               target="_blank"><span>
@@ -330,11 +342,6 @@
           <img src="images/calculator_PS.png" alt="landing-page" />
           <div class="project-description">
             <h4>Calculator App</h4>
-            <p>
-              A web app for making simple calculations. User can perform
-              mathematical operations like addition, subtraction,
-              multiplication, and division.
-            </p>
             <p class="project-tools">JavaScript</p>
             <a href="https://github.com/valencydickson/calculator-app" role="button" class="btn project-btn code-btn"
               target="_blank"><span>
@@ -349,28 +356,52 @@
           </div>
         </div>
 
-        <div class="project-card">
-          <img src="images/rest-country-api.png" alt="landing-page" />
-          <div class="project-description">
-            <h4>REST Countries API</h4>
-            <p>
-              A web app that uses REST Countries API to pull country data.
-              User can See all countries from the API on the homepage, Search
-              for a country using an input field, Filter countries by region.
-            </p>
-            <p class="project-tools">ReactJs | Redux | Bootstrap</p>
 
-            <a href="https://github.com/valencydickson/rest-countries-api" role="button"
-              class="btn project-btn code-btn" target="_blank"><span>
-                <i class="fab fa-github"></i>
-              </span>
-              Source code</a>
-            <a href="https://rest-countries-api-gray-nine.vercel.app/" role="button" class="btn project-btn site-btn"
-              target="_blank"><span>
-                <i class="fas fa-eye"></i>
-              </span>
-              Visit site</a>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+
+    <section id="testimonials" class="container">
+      <div class="section-header" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+        <h2 style="text-transform: capitalize;">What client Says</h2>
+        <hr />
+      </div>
+
+      <div class="testimonials-content" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <div class="client-header">
+              <img src="images/godfrey.jpg" class="client-img" alt="Client Image">
+              <h3>Godfrey Daniel</h3>
+              <p>Founder of LWAES</p>
+            </div>
+
+
+            <div class="text">"VALENCY is a flexible, easy to instruct and reliable web developer. I worked with him on
+              my project which turned out nothing to be a successful, modern and high standard work. It was worth
+              working with him and I am looking forward to work with him on any other upcoming projects. He's got more
+              than it takes!. He's worth working with."</div>
           </div>
+
+          <div class="mySlides fade">
+            <div class="client-header">
+              <img src="images/coleman.jpg" class="client-img" alt="Client Image">
+              <h3>Coleman Foster</h3>
+              <p>Principal of the Colemanfosterfirm.com</p>
+            </div>
+            <div class="text">"Valency is a creative and highly skilled web developer. His talent is certainly
+              appreciated and recommended."</div>
+          </div>
+
+
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
       </div>
     </section>
@@ -384,21 +415,7 @@
       </div>
       <div class="contacts-content" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
         <h4>Do you have a question or want to work together?</h4>
-
         <a href="mailto:dickson.valency@gmail.com" target="_blank" role="button" class="btn cta">Get in Touch</a>
-        <!-- <form action="" class="contacts-form">
-            <input type="text" placeholder="Name*" class="name" required />
-            <input type="email" placeholder="Email*" class="email" required />
-            <textarea
-              cols="30"
-              rows="10"
-              placeholder="Message*"
-              class="message"
-              required
-            ></textarea>
-            <div class="mail-message"></div>
-            <button type="submit" class="btn-submit btn">Submit</button>
-          </form> -->
       </div>
     </section>
   </main>
@@ -455,6 +472,36 @@
 
   <!-- Main Js -->
   <script src="js/index.js"></script>
+
+  <script>
+    //Testimonials carousel
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      slides[slideIndex - 1].style.display = "block";
+
+    }
+  </script>
 </body>
 
 </html>
