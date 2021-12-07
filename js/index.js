@@ -85,4 +85,7 @@ $(window).ready(function () {
   let y = year.getFullYear();
 
   $(".year").html("@ " + y);
+
+
+
 });

@@ -158,9 +158,6 @@
   }
 
 
-  .skills-list {
-    display: none;
-  }
 
   tr,th {
     border: 1px solid #dddddd;
@@ -190,8 +187,12 @@
   }
 
   .project-card {
-    width: 49%;
+    margin: 0 0 3em;
+    width: 45%;
   }
+  
+
+  
 
   /* Contacts  */
   .contacts-content {
